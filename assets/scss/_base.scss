@@ -1,0 +1,21 @@
+@use './mixin';
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: mixin.$gray02;
+  @include mixin.mq{
+    font-size: 1.4rem;
+  }
+}
+
+img{
+  width: 100%;
+}
